@@ -1,0 +1,54 @@
+:root{
+    --button-color: rgb(176, 99, 248);
+    --button-hover: rgba(87, 60, 236, 0.979);
+    --correct-ans: limegreen;
+    --wrong-ans: red;
+}
+
+
+body {
+    background-color: beige;
+}
+h1, p{
+    text-align: center;
+}
+button {
+    background-color: var(--button-color);
+    border: none;
+    color: white;
+    padding: 17px 52px;
+    border-radius: 98px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    width: 80%;
+    margin-top: 12px;
+}
+/* button:active, button:focus {
+    background-color: limegreen;
+} */
+button:hover {
+    cursor: crosshair;
+    background-color: var(--button-hover);
+}
+footer {
+    text-align: center;
+}
+#wrong-ans:active, #wrong-ans:focus{
+    background-color: var(--wrong-ans);
+}
+#correct-ans:active, #correct-ans:focus{
+    background-color: var(--correct-ans);
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    color: blue;
+}
+
+/* button:active, button:focus {
+    background-color: limegreen;
+} */
