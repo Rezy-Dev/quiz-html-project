@@ -1,15 +1,13 @@
 :root{
     --button-color: rgb(176, 99, 248);
-    --button-hover: rgb(250, 93, 93);
+    --button-hover: rgba(87, 60, 236, 0.979);
     --correct-ans: limegreen;
     --wrong-ans: red;
 }
-
-
 body {
-    background-color: beige;
+    background-color: rgb(252, 252, 235);
 }
-h1, p, blockquote{
+h1, p{
     text-align: center;
 }
 button {
@@ -17,17 +15,47 @@ button {
     border: none;
     color: white;
     padding: 17px 52px;
+    
     border-radius: 98px;
     text-align: center;
     display: inline-block;
-    font-size: 23px;
+    font-size: 14px;
     transition-duration: 0.4s;
-    width: 50%;
+    width: 80%;
+    margin-top: 12px;
 }
 button:hover {
     cursor: crosshair;
     background-color: var(--button-hover);
 }
+#wrong-ans:active, #wrong-ans:focus{
+    background-color: var(--wrong-ans);
+}
+#correct-ans:active, #correct-ans:focus{
+    background-color: var(--correct-ans);
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
 footer {
     text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 104, 202);
+}
+
+/* CSS FOR RESPONSIVE BUTTONS THAT FITS PROPERLY IN MOST OF THE SCREEN RESOLUTIONS  */
+
+@media screen and (max-width: 800px) {
+    button {
+      width: 100%;
+      font-size: 14px;
+    }
 }
